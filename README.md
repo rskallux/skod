@@ -4,6 +4,7 @@
 Install ==> 
 <p align="left">
 chmod +x install
+<p align="left">
 ./install  
 <p align="left">
 run  skr
