@@ -1,0 +1,31 @@
+#!/bin/bash
+killall ruby
+> qtest.sh
+clear
+echo " _____________________________________________________________________ By _R_@Skabello _______________________________"
+echo " "
+echo " "
+echo "Type your file or folder here"
+read ij lm no pq
+##
+link="`hostname -i`"   ## Run this variable
+#######################
+#server="`ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd).start`"
+echo""
+clear
+echo "                                                               Process..."
+sleep 5
+#echo " #!/bin/bash " >> qtest.sh
+echo "http://$link:3000/$ij$lm$no$pq/" >> qtest.sh 
+sleep 2
+sed -i 's/ //g' qtest.sh  ## cleaning
+sed -i '1s/^/echo " /' qtest.sh  ##   start line
+sed -i '1s/$/ " /' qtest.sh  ##  end line
+echo "| curl -F-=\<- qrenco.de" >> qtest.sh 
+sed -i ":a;$!N;s/\n//;ta;" qtest.sh  ## concatenate line
+#echo "$server"  ## Run this variable
+screen -d -m ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd).start'
+###########################  run server ###################
+sleep 2
+sh qtest.sh
+
