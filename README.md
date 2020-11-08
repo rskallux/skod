@@ -1,12 +1,11 @@
 # skod
 <img src="https://i.postimg.cc/QCvn5mHW/imm.jpg"/>
 <p align="center">
-installation
+Install ==>  chmod +x install  --> ./install
 <p align="center">
-chmod +x install
-./install
- <p align="center">
- Run
- skr
+run  -->  
+<p align="center">
+1. choose a file or folder to run skr.
+2. Point your device's qrcode reader at the image
 <p align="center">
 
