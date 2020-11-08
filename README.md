@@ -1,7 +1,11 @@
 # skod
 <img src="https://i.postimg.cc/QCvn5mHW/imm.jpg"/>
 <p align="left">
-Install ==>  chmod +x install  --> ./install
+Install ==> 
+<p align="left">
+chmod +x install
+<p align="left">
+run  skr
 <p align="left">
 run  -->  
 <p align="left">
